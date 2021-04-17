@@ -20,6 +20,7 @@ const closeModal = () => {
 const onEnterKeyPressed = (event) => {
 	if (event.key === 'Escape') {
 		closeModal();
+		console.log(string);
 	}
 };
 
@@ -29,4 +30,4 @@ btnsOpenModal.forEach((btn) => {
 
 btnCloseModal.addEventListener('click', closeModal);
 overlay.addEventListener('click', closeModal);
-document.addEventListener('keydown', (key) => onEnterKeyPressed(key));
+document.addEventListener('keydown', onEnterKeyPressed);
