@@ -20,7 +20,6 @@ const closeModal = () => {
 const onEnterKeyPressed = (event) => {
 	if (event.key === 'Escape') {
 		closeModal();
-		console.log(string);
 	}
 };
 
